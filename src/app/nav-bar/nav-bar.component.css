@@ -3,28 +3,32 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  cursor: pointer;
 }
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: #102ccf;
+  color: #fbfcdc;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 li:last-child {
   border-right: none;
 }
 
-li {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 li:hover:not(.active) {
-  background-color: #111;
+  background-color: #3dec71;
+  color:#05104b
 }
 
 .active {
