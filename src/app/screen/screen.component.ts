@@ -10,7 +10,6 @@ import { getAnimationsForBubbleSort } from './Algo/bubbleSort';
 // @ts-ignore
 import { getAnimationsForHeapSort } from './Algo/heapSort';
 
-
 @Component({
   selector: 'app-screen',
   templateUrl: './screen.component.html',
@@ -18,7 +17,7 @@ import { getAnimationsForHeapSort } from './Algo/heapSort';
 })
 export class ScreenComponent implements OnInit {
 
-   NUMBER_OF_ARRAY_BARS = 150;
+   NUMBER_OF_ARRAY_BARS = 50;
 
    Array = [1];
 
@@ -26,11 +25,11 @@ export class ScreenComponent implements OnInit {
    PRIMARY_COLOR = '#0080FF';
 
    // This is the color of array bars that are being compared throughout the animations.
-   SECONDARY_COLOR = 'red';
+   SECONDARY_COLOR = '#ec3f3f';
 
-   ANIMATION_SPEED_MS = 10;
+   ANIMATION_SPEED_MS = 50;
 
-   PIVOT_COLOR = "green";
+   PIVOT_COLOR = "#3dec71";
 
 
    NUMBER_OF_SWAP = 0;
@@ -82,7 +81,7 @@ export class ScreenComponent implements OnInit {
     const array = []
 
     for (let i = 0; i < this.NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(this.randomIntFromInterval(5, 730));
+      array.push(this.randomIntFromInterval(5, 600));
     }
 
     this.Array = array as number[];
